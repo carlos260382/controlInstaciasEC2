@@ -1,0 +1,30 @@
+{
+  "name": "back-appsync-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "npm rimraf dist",
+    "test": "jest",
+    "cdk": "cdk",
+    "deploy": "npm clean && npm build && npm cdk deploy",
+    "destroy": "npm cdk destroy",
+    "synth": "npm cdk synth > template.yaml"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.64.0",
+    "aws-sdk": "^2.1312.0",
+    "constructs": "^10.1.235",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "aws-cdk": "^2.62.2",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^4.1.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
